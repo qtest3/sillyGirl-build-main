@@ -2,11 +2,11 @@ package main
 
 import (
      //青龙2.9机器人
-	 _ "github.com/cdle/sillyGirl/develop/qinglong"
+	 _ "github.com/qtest3/young1_go_ql"
 	 //京东账号
-	 _ "github.com/cdle/sillyGirl/develop/jd_cookie"
+	 _ "github.com/qtest3/young1_go_jd"
 	 //腾讯QQ
-	 _ "github.com/cdle/sillyGirl/im/qq"
+	 _ "github.com/qtest3/sillyGirl/im/qq"
 	 //telegram
-	 _ "github.com/cdle/sillyGirl/im/tg"
+	 _ "github.com/qtest3/sillyGirl/im/tg"
 )

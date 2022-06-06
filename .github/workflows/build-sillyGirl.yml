@@ -32,16 +32,16 @@ jobs:
         sudo apt-get -y install bison ed gawk gcc libc6-dev make       
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/cdle/sillyGirl.git /home/runner/go/src/github.com/cdle/sillyGirl
+        git clone --depth=1 https://github.com/qtest3/sillyGirl.git /home/runner/go/src/github.com/qtest3/sillyGirl
     - name: Build Firmware
       run: |
-        cp $GITHUB_WORKSPACE/dev.go /home/runner/go/src/github.com/cdle/sillyGirl/
-        cd /home/runner/go/src/github.com/cdle/sillyGirl/develop
+        cp $GITHUB_WORKSPACE/dev.go /home/runner/go/src/github.com/qtest3/sillyGirl/
+        cd /home/runner/go/src/github.com/qtest3/sillyGirl/develop
         git clone https://github.com/ufuckee/jd_cookie
-        cd /home/runner/go/src/github.com/cdle/sillyGirl
+        cd /home/runner/go/src/github.com/qtest3/sillyGirl
         go build
         mkdir -p /opt/images
-        sudo mv -f /home/runner/go/src/github.com/cdle/sillyGirl/sillyGirl /opt/images/
+        sudo mv -f /home/runner/go/src/github.com/qtest3/sillyGirl/sillyGirl /opt/images/
     - name : Upload packages
       uses: actions/upload-artifact@master
       if: always()
