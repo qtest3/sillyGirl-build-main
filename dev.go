@@ -6,7 +6,7 @@ import (
 	 //京东账号
 	 _ "github.com/qtest3/young1_go_jd"
 	 //腾讯QQ
-	 _ "github.com/qtest3/sillyGirl/im/qq"
+	 _ "github.com/qtest3/young1_go_silly/im/qq"
 	 //telegram
-	 _ "github.com/qtest3/sillyGirl/im/tg"
+	 _ "github.com/qtest3/young1_go_silly/im/tg"
 )
