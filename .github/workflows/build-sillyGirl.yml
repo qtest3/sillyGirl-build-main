@@ -37,7 +37,7 @@ jobs:
       run: |
         cp $GITHUB_WORKSPACE/dev.go /home/runner/go/src/github.com/qtest3/sillyGirl/
         cd /home/runner/go/src/github.com/qtest3/sillyGirl/develop
-        git clone https://github.com/ufuckee/jd_cookie
+        git clone https://github.com/qtest3/young1_go_jd
         cd /home/runner/go/src/github.com/qtest3/sillyGirl
         go build
         mkdir -p /opt/images
