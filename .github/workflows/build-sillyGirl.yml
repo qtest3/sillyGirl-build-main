@@ -38,8 +38,8 @@ jobs:
         mkdir -p /home/runner/go/src/github.com/qtest3/young1_go_silly/develop
         cp $GITHUB_WORKSPACE/dev.go /home/runner/go/src/github.com/qtest3/young1_go_silly/
         cd /home/runner/go/src/github.com/qtest3/young1_go_silly/develop
-        git clone https://github.com/qtest3/young1_go_jd
-        cd /home/runner/go/src/github.com/qtest3/young1_go_silly
+        # git clone https://github.com/qtest3/young1_go_jd
+        # cd /home/runner/go/src/github.com/qtest3/young1_go_silly
         go build
         mkdir -p /opt/images
         sudo mv -f /home/runner/go/src/github.com/qtest3/young1_go_silly/sillyGirl /opt/images/
