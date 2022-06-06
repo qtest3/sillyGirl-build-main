@@ -35,6 +35,7 @@ jobs:
         git clone --depth=1 https://github.com/qtest3/young1_go_silly.git /home/runner/go/src/github.com/qtest3/young1_go_silly
     - name: Build Firmware
       run: |
+        mkdir -p /home/runner/go/src/github.com/qtest3/young1_go_silly/develop
         cp $GITHUB_WORKSPACE/dev.go /home/runner/go/src/github.com/qtest3/young1_go_silly/
         cd /home/runner/go/src/github.com/qtest3/young1_go_silly/develop
         git clone https://github.com/qtest3/young1_go_jd
